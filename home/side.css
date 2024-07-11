@@ -1,0 +1,211 @@
+body {
+    width: 100%;
+    background-color: rgb(44, 0, 101);
+    color: black;
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(31, 24, 65);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.side {
+    height: 800px;
+    position: fixed; /* Mengatur posisi tetap di layar */
+    top: 0; /* Mengatur posisi di bagian atas */
+    left: 0; /* Mengatur posisi di bagian kiri */
+    width: 300px; /* Lebar container */
+    padding: 20px; /* Padding agar konten tidak terlalu dekat dengan tepi */
+    background-color: #f0f0f0; /* Warna latar belakang */
+    z-index: 1000; /* Memberikan z-index tinggi agar berada di atas elemen lain */
+}
+
+.side img {
+    width: 300px; /* Mengatur lebar gambar */
+    height: auto; /* Mengatur tinggi gambar agar tetap proporsional */
+    
+}
+
+.side i {
+    font-size: 40px;
+    size: 30px;
+    color: black;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #190554;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    z-index: 999; /* Z-index harus lebih rendah dari .side agar .side tetap di atas */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.nav-list a:hover {
+    background-color: rgb(98, 0, 255);
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    min-height: calc(100vh - 160px); /* Adjust based on header and footer height */
+}
+
+main h2 {
+    font-size: 100px;
+    text-align: center; /* Center align the text */
+    position: absolute;
+    top: 50%; /* Put it in the middle vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center it perfectly */
+    z-index: 1;
+    color: white;
+}
+
+.slideshow-container {
+    max-width: auto;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 3px;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.porto {
+    background-color: #190554;
+}
+
+article h2 {
+    background-color: #190554;
+    color: white;
+    font-size: 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+.gambar li {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+}
+
+.gambar h2 {
+    color: white;
+    font-size: 40px;
+    background-color: blueviolet;
+}
+
+.gambar {
+    padding: 50px;
+    display: flex;
+}
+
+.gambar1 li {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 20px;
+}
+
+.gambar1 h2 {
+    color: white;
+    font-size: 40px;
+    background-color: blueviolet;
+}
+
+.gambar1 {
+    padding: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+footer {
+    font-size: 25px;
+    background-color: #190554;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: white;
+}

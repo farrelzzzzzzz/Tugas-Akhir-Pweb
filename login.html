@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="sigin.html">Sign-in | </a></li>
+            <li><a href="login.html">Login | </a></li>
+        </ul>
+    </nav>
+    <div class="form-container">
+        <form id="formlogin" action="login.php" method="post" onsubmit="return validasiform()">
+            <h2>Log-in</h2>
+            <h4>You Have Account?</h4>
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="pass">Password: </label>
+            <input type="password" id="pass" name="pass" required><br><br>
+
+            <div class="checkbox-group">
+                <label for="cek">Terima Persyaratan Privasi Dari kami
+                <input type="checkbox" id="cek" name="cek" required>
+                </label>
+            </div><br><br><br>
+
+            <input type="submit" value="Masuk"><br>
+            <input type="reset" value="Reset">
+
+            <a href="https://www.facebook.com/?locale=id_ID"><i class="fa-brands fa-facebook" ></i></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
