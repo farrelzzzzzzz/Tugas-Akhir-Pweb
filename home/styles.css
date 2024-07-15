@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    background-color: rgb(44, 0, 101);
+    background-color: #0c0424;
     color: black;
     font-family: 'Gotham', sans-serif;
     font-size: 16px;
@@ -9,16 +9,15 @@ body {
 }
 
 header {
-    background-color: rgb(31, 24, 65);
+    background-color: #0c0424;
     display: flex;
     justify-content: center;
     padding: 10px 0;
 }
 
-
 .navbar {
     width: 100%;
-    background-color: #190554;
+    background-color: #1f007d;
     padding: 20px 50px;
     position: fixed;
     top: 0;
@@ -41,7 +40,6 @@ header {
     font-size: 30px;
     padding: 25px;
     border-radius: 20px;
-    
 }
 
 .nav-list a:hover {
@@ -53,19 +51,21 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stack items vertically */
-    min-height: calc(100vh - 160px); /* Adjust based on header and footer height */
+    flex-direction: column;
+    min-height: calc(100vh - 160px);
 }
+
 main h2 {
     font-size: 100px;
-    text-align: center; /* Center align the text */
+    text-align: center;
     position: absolute;
-    top: 50%; /* Put it in the middle vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust to center it perfectly */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
     color: white;
 }
+
 .slideshow-container {
     max-width: auto;
     position: relative;
@@ -101,7 +101,6 @@ main h2 {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 .dot {
     cursor: pointer;
     height: 15px;
@@ -127,59 +126,73 @@ main h2 {
     to {opacity: 1}
 }
 
-.porto{
-    background-color: #190554;
-   
+article {
+    padding-bottom: 80px;
+    padding-top: 80px;
 }
 
-
-
-article h2{
+article h2 {
     background-color: #190554;
     color: white;
-    font-size: 50px;
-    padding: 50px;
+    font-size: 40px;
+    margin: auto;
+    padding: 40px;
+}
+
+div.scroll-container {
+    background-color: #030217;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+div.scroll-container img {
+    padding: 10px;
+    max-width: 700px;
+    height: auto;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+div.scroll-container1 {
+    background-color: #030217;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.scroll-container1 img {
+    padding: 30px;
+    max-width: 500px;
+    height: auto;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.tentang h2 {
     text-align: center;
 }
 
-.gambar  li {
-    height: 300px;
+.tentang p {
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.tentang .social-icons {
     display: flex;
     justify-content: center;
-    justify-items: center;
-    margin: auto;
+    gap: 20px; /* Adjust the space between icons */
+    padding: 20px;
 }
 
-.gambar h2{
+.tentang .social-icons a {
     color: white;
-    font-size: 40px;
-    background-color: blueviolet;
-}
-
-.gambar{
-    padding: 50px;
-    display: flex;
-}
-
-.gambar1  li {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin: 0 20px;
-}
-
-.gambar1 h2{
-    color: white;
-    font-size: 40px;
-    background-color: blueviolet;
-}
-
-.gambar1{
-    
-    padding: 50px;
-    display: flex;
-    gap: 10px;
+    font-size: 30px;
+    text-decoration: none;
 }
 
 footer {
@@ -190,4 +203,8 @@ footer {
     align-items: center;
     height: 100px;
     color: white;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    z-index: 1000; 
 }
