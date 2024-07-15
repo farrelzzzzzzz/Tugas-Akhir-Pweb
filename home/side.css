@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    background-color: rgb(44, 0, 101);
+    background-color: #0c0424;
     color: black;
     font-family: 'Gotham', sans-serif;
     font-size: 16px;
@@ -9,26 +9,25 @@ body {
 }
 
 header {
-    background-color: rgb(31, 24, 65);
+    background-color: #0c0424;
     display: flex;
     justify-content: center;
     padding: 10px 0;
 }
-
 .side {
     height: 800px;
-    position: fixed; /* Mengatur posisi tetap di layar */
-    top: 0; /* Mengatur posisi di bagian atas */
-    left: 0; /* Mengatur posisi di bagian kiri */
-    width: 300px; /* Lebar container */
-    padding: 20px; /* Padding agar konten tidak terlalu dekat dengan tepi */
-    background-color: #f0f0f0; /* Warna latar belakang */
-    z-index: 1000; /* Memberikan z-index tinggi agar berada di atas elemen lain */
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 300px; 
+    padding: 20px;
+    background-color: #f0f0f0; 
+    z-index: 1000; 
 }
 
 .side img {
-    width: 300px; /* Mengatur lebar gambar */
-    height: auto; /* Mengatur tinggi gambar agar tetap proporsional */
+    width: 300px;
+    height: auto; 
     
 }
 
@@ -40,11 +39,11 @@ header {
 
 .navbar {
     width: 100%;
-    background-color: #190554;
+    background-color: #1f007d;
     padding: 20px 50px;
     position: fixed;
     top: 0;
-    z-index: 999; /* Z-index harus lebih rendah dari .side agar .side tetap di atas */
+    z-index: 999;
 }
 
 .nav-list {
@@ -149,55 +148,74 @@ main h2 {
     to {opacity: 1}
 }
 
-.porto {
-    background-color: #190554;
+article{
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
-article h2 {
+article h2{
+    text-align: center;
     background-color: #190554;
     color: white;
-    font-size: 50px;
-    padding: 50px;
+    font-size: 40px;
+    margin: auto;
+    padding: 30px;
+}
+div.scroll-container {
+    background-color: #030217;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+div.scroll-container img {
+    padding: 10px;
+    max-width: 700px; /* Sesuaikan ukuran sesuai keinginan */
+    height: auto; /* Menjaga rasio aspek gambar */
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+div.scroll-container1 {
+    background-color: #030217;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    
+}
+
+div.scroll-container1 img {
+    padding: 30px;
+    max-width: 500px; /* Sesuaikan ukuran sesuai keinginan */
+    height: auto; /* Menjaga rasio aspek gambar */
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.tentang h2{
+    text-align: center;
+    
+}
+
+.tentang p{
+    padding: 20px;
+    color: white;
+    font-size: 20px;
     text-align: center;
 }
 
-.gambar li {
-    height: 300px;
+.tentang .social-icons {
     display: flex;
     justify-content: center;
-    justify-items: center;
-    margin: auto;
+    gap: 20px; /* Adjust the space between icons */
+    padding: 20px;
 }
 
-.gambar h2 {
+.tentang .social-icons a {
     color: white;
-    font-size: 40px;
-    background-color: blueviolet;
-}
-
-.gambar {
-    padding: 50px;
-    display: flex;
-}
-
-.gambar1 li {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin: 0 20px;
-}
-
-.gambar1 h2 {
-    color: white;
-    font-size: 40px;
-    background-color: blueviolet;
-}
-
-.gambar1 {
-    padding: 50px;
-    display: flex;
-    gap: 10px;
+    font-size: 30px;
+    text-decoration: none;
 }
 
 footer {
