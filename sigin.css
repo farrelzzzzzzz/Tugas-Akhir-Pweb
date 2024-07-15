@@ -1,5 +1,6 @@
 /* Reset CSS */
 * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +8,7 @@
 
 body {
     font-family: gotham, sans-serif;
-    background-image: url(img/cartoon-mountain-landscape-with-river.jpg);
+    background-image: url(img/copyr.jpeg);
     background-position: center;
     background-size: cover;
     background-color: #f2f2f2;
@@ -20,12 +21,13 @@ body {
 }
 
 h4 {
+    color: white;
     text-align: center;
 }
 
 .navbar {
     width: 100%;
-    background-color: #190554;
+    background-color: #0c0424;
     padding: 20px 50px;
     position: fixed;
     top: 0;
@@ -65,7 +67,8 @@ h4 {
 }
 
 form {
-    background-color: #ffffff;
+    
+    background-color: #050225;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -75,13 +78,13 @@ form {
 h2 {
     font-size: 40px;
     text-align: center;
-    color: #333333;
+    color: white;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    color: #555555;
+    color: white;
 }
 
 input[type="text"],
@@ -116,7 +119,7 @@ select {
 .form-container i {
     font-size: 30px;
     size: 30px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 input[type="checkbox"] {
@@ -132,13 +135,13 @@ input[type="reset"] {
     border: none;
     border-radius: 5px;
     color: #ffffff;
-    background-color: #614caf;
+    background-color: #750099;
     cursor: pointer;
     box-sizing: border-box;
 }
 
 input[type="reset"] {
-    background-color: #000000;
+    background-color: #000270;
 }
 
 input[type="submit"]:hover,
